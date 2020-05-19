@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+    <div class="login-box">
+        <h1>Register</h1>
+        <form method="POST">
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username" />
+            <p>Email id</p>
+            <input type="email" name="email" placeholder="Enter email address" />
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password" />
+            <input class="btn btn-default" type="submit" value="Register">
+            <p>Already Registered? <a href="{{url_for('login')}}">Sign in</a></p>
+            
+        </form>
+    </div>
+
+</body>
+
+</html>

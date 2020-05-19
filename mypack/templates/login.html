@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+
+<head>
+    <title> Login </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <form method="post">
+            <p>Username</p>
+            <input type="text" name="user" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="user_password" placeholder="Enter Password">
+            <input class="btn btn-default" type="submit" value="Login">
+        </form>
+        <a href="{{url_for('register')}}">Sign up</a>
+    </div>
+</body>
+
+</html>
